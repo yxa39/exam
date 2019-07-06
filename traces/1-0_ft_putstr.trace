@@ -1,0 +1,88 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p32.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Sat Jul  6 10:18:03 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190706/yxie
+
+= Git history ==================================================================
+$> git -C /var/folders/h7/r8tm54nj7fz_l4p7pl0r58bm0000gp/T/tmpJ8yZYx/user log --pretty='%H - %an, %ad : %s'
+5e5aa0e6e58822de8fe48a5a9b0718554f3459e5 - Yujuan Xie, Sat Jul 6 10:17:54 2019 -0700 : ft_putstr
+d583939d62092871cd2ff1ba598d054cd3861f3a - Yujuan Xie, Sat Jul 6 10:09:55 2019 -0700 : hello
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/h7/r8tm54nj7fz_l4p7pl0r58bm0000gp/T/tmpJ8yZYx/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  449 Jul  6 10:18 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jul  6 10:18 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought  102 Jul  6 10:18 hello
+
+/var/folders/h7/r8tm54nj7fz_l4p7pl0r58bm0000gp/T/tmpJ8yZYx/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  979 Jul  6 10:18 ft_putstr.c
+
+/var/folders/h7/r8tm54nj7fz_l4p7pl0r58bm0000gp/T/tmpJ8yZYx/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  976 Jul  6 10:18 hello.c
+ 
+= ft_putstr ====================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_putstr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./zfpor8h1cbg0g2plql6ae8sc "ksXwBIZ"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./e9foczriwqd9xuatb782dpzk "ywundTm2hl"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./kkosivsctnhzksr3e72r6yxt "43Rzs8PqKMo"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./51swdjvki3i1768hirrig2vp "rBYJzwceb ZLi8ys rQ5c2yClvxPo goPw7xfv3 Rnl Uz04oOSjM6 1XPlZ7 Kv8p WaNm 38AfjYoMOqSp k0un1jBh5tw 2ncJkIEMNaU"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./68tep5565z8t23x6710y8j0c "bFRGr HLYIgQ4li 7cmL0TuG2pAeogJa FCykSrBhjZ5 iGJhOHW5jqo3aT 2IvtjE6a5h4fGzeA XrkgmILFtPx2wAfz8 lIoraPEv lVY71fenEODyPj 5gJhtbaY"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./wab23v0z07aryhjy5hs23itc "YR70fPrgMhE831 kVceEg5tLlMmu2wdJ rXw lrL OQNI4t9fZigek HumqZ92MpsfhnX1iV YJNRD7TOV 7PebUS bjgqCWencEV xWgLoCRJUnqpNzb ePrQpDAVyJZH UQgJfxcvpi"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./8yrpkpqirocb2g57xkkiyo7o "5PFA0k1s2jWyb9LKH J4Bc5Hqx3lVEIL nXT 5BPQ0St8TxyHN91I NyR 9Hn7MrSD6lBQxi MfVrm6Jb9L4gwcG5 lBcX8n oswgIcLy ogQjRqKFI bTOPkEVcQav1 jMQlOJKcFps"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./yrm7v48ehlcn94ksr9kwln1m 
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

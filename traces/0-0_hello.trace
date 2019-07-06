@@ -1,0 +1,47 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p7.42.us.org
+Darwin 17.5.0 x86_64
+$> date
+Sat Jul  6 10:10:20 PDT 2019
+$> gcc --version
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+$> clang --version
+Apple LLVM version 9.1.0 (clang-902.0.39.1)
+Target: x86_64-apple-darwin17.5.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2019/c-exam-alone-in-the-dark-beginner/practice-exam_20190706/yxie
+
+= Git history ==================================================================
+$> git -C /var/folders/vj/gsd070cj00l657f0bk2z59200000gp/T/tmppjJWJT/user log --pretty='%H - %an, %ad : %s'
+d583939d62092871cd2ff1ba598d054cd3861f3a - Yujuan Xie, Sat Jul 6 10:09:55 2019 -0700 : hello
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/vj/gsd070cj00l657f0bk2z59200000gp/T/tmppjJWJT/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  218 Jul  6 10:10 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jul  6 10:10 hello
+
+/var/folders/vj/gsd070cj00l657f0bk2z59200000gp/T/tmppjJWJT/user/hello:
+total 8
+-rw-r--r--  1 deepthought  deepthought  976 Jul  6 10:10 hello.c
+ 
+= hello ========================================================================
+$> gcc -Wextra -Wall -Werror hello.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./wrktlvh72fo2hx5con0ielzw test1.prm
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
